@@ -25,6 +25,10 @@
     <!-- LINK DOS EMOJIS -->
     <script src="https://kit.fontawesome.com/7a6792c926.js" crossorigin="anonymous"></script>
     <!-- FIM DO LINK DOS EMOJIS -->
+
+    <!-- LINK SWIPERJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- FIM DO LINK SWIPERJS CSS -->
 </head>
     <script src="script.js" defer></script>
 <body>
@@ -85,25 +89,70 @@
 
 
         <section class="servicos" id="servicos">
-            <div class="interface"> 
-                <h2 class="titulo">NOSSOS SERVIÇOS<span>.</span></h2>
-                <div class="flex">
-                    <div class="container">
-                        <div class="card-wrapper">
-                            <ul class="card-list">
-                                <li class="card-item">
-                                    <a href="link do contato aqui" class="card-link">
-                                        <img src="assets/cards-services/foto card landing page.jpg" alt="landing page" class="card-image">
-                                        <p class="badge">Landing Pages</p>
-                                        <h2 class="card-title">Uma landing page é uma página única e estratégica criada para atrair atenção e gerar conversões. Descubra como ela pode ser a chave para turbinar seus resultados!</h2>
-                                        <button class="card-button material-symbols-rounded">arrow_forward</button>
-                                    </a> <!--card-link -->
-                                </li> <!-- card-item -->
-                            </ul> <!-- card-list -->
-                        </div> <!-- card-wrapper -->
-                    </div> <!--container-->
-                </div><!-- flex -->
-            </div> <!-- interface -->
+
+            <div class="container swiper">
+                    <h2 class="titulo">NOSSOS SERVIÇOS<span>.</span></h2>   
+                    <div class="card-wrapper">
+                        <ul class="card-list swiper-wrapper">
+
+
+                            <li class="card-item swiper-slide">
+                                <a href="link do contato aqui" class="card-link">
+                                    <img src="assets/cards-services/foto card landing page.jpg" alt="landing page" class="card-image">
+                                    <p class="badge">Landing Pages</p>
+                                    <h2 class="card-title">Uma landing page é uma página única e estratégica criada para atrair atenção e gerar conversões. Descubra como ela pode ser a chave para turbinar seus resultados!</h2>
+                                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                                </a> <!--card-link -->
+                            </li> <!-- card-item -->
+
+
+                            <li class="card-item swiper-slide">
+                                <a href="link do contato aqui" class="card-link">
+                                    <img src="assets/cards-services/foto card websites.jpg" alt="landing page" class="card-image">
+                                    <p class="badge">Websites</p>
+                                    <h2 class="card-title">Um website é sua presença digital completa, aberta 24h para apresentar, vender e encantar. Quer descobrir como transformar cliques em clientes?</h2>
+                                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                                </a> <!--card-link -->
+                            </li> <!-- card-item -->
+
+
+                            <li class="card-item swiper-slide">
+                                <a href="link do contato aqui" class="card-link">
+                                    <img src="assets/cards-services/foto card sistemas.jpg" alt="landing page" class="card-image">
+                                    <p class="badge">Sistemas</p>
+                                    <h2 class="card-title">Sistemas são soluções digitais que automatizam processos, aumentam a produtividade e tornam a gestão mais eficiente. Descubra como eles transformam ideias em resultados reais.</h2>
+                                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                                </a> <!--card-link -->
+                            </li> <!-- card-item -->
+
+
+                            <li class="card-item swiper-slide">
+                                <a href="link do contato aqui" class="card-link">
+                                    <img src="assets/cards-services/foto card config domain.jpg" alt="landing page" class="card-image">
+                                    <p class="badge">Configuração de Domínio</p>
+                                    <h2 class="card-title">A configuração de domínio conecta seu endereço personalizado (como www.suaempresa.com) ao seu site, garantindo presença profissional e fácil acesso online. É essencial para credibilidade e identidade digital.</h2>
+                                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                                </a> <!--card-link -->
+                            </li> <!-- card-item -->
+
+
+                            <li class="card-item swiper-slide">
+                                <a href="link do contato aqui" class="card-link">
+                                    <img src="assets/cards-services/foto card consultoria.jpg" alt="landing page" class="card-image">
+                                    <p class="badge">Consultorias em Tecnologia</p>
+                                    <h2 class="card-title">Consultorias em tecnologias oferecem orientação especializada para otimizar sistemas, melhorar processos e implementar soluções digitais sob medida para seu negócio.</h2>
+                                    <button class="card-button material-symbols-rounded">arrow_forward</button>
+                                </a> <!--card-link -->
+                            </li> <!-- card-item -->
+
+
+                        </ul> <!-- card-list -->
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-slide-button swiper-button-prev"></div>
+                        <div class="swiper-slide-button swiper-button-next"></div>
+                    </div> <!-- card-wrapper -->
+                </div> <!--container-->
         </section> <!-- servicos -->
 
         <section class="sobre"></section>
@@ -117,5 +166,11 @@
 
         </div>
     </footer>
+
+    <!-- LINK SWIPER JS SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- LINK CUSTOM SCRIPT-->
+    <script src="menu.js"></script>
 </body>
 </html>

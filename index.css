@@ -17,7 +17,7 @@ body{
 }
 
 .interface{
-        max-width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -186,6 +186,7 @@ section.topo .interface{
 /* -------------------------------------------------- ESTILO SERVIÇOS --------------------------------------------------*/
 
 section.servicos{
+    display: flex; 
     align-items: center;
     justify-content: center;
     min-height: 100vh; /* ALTURA MÍNIMA */
@@ -199,7 +200,7 @@ section.servicos{
 }
 
 .card-list .card-item .card-link{
-    width: 400px; /* TAMANHO DO CARD GERAL*/
+    user-select: none;
     display: block; /* EFEITO PARA A IMAGEM SE ENCAIXAR */
     background: #fff; /* COR DO FUNDO DO CARD */
     padding: 18px; /* ESPAÇAMENTO INTERNO DO CARD */
@@ -214,6 +215,10 @@ section.servicos{
 
 .card-list .card-item .card-link:hover{
     border-color: #072763;
+}
+
+.card-list .card-item .card-link:active{
+    cursor: grabbing;
 }
 
 .card-list .card-link .card-image{
@@ -236,9 +241,13 @@ section.servicos{
 
 
 .card-list .card-link .card-title{
-    font-size: 1rem; /* TAMANHO DA DESCRIÇÃO */
+    font-size: 0.7rem; /* TAMANHO DA DESCRIÇÃO */
     color: #000; /* COR DA DESCRIÇÃO */
-    font-weight: 600; /* NEGRITO DA DESCRIÇÃO */
+    font-weight: 500; /* NEGRITO DA DESCRIÇÃO */
+    flex-grow: 1;
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .card-list .card-link .card-button{
@@ -259,3 +268,35 @@ section.servicos{
     background: #072763;
 }
 
+.card-wrapper{
+    max-width: 1100px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
+.card-wrapper .swiper-pagination-bullet{
+    height: 13px;
+    width: 13px;
+    opacity: 0.5;
+    background: #072763;
+}
+
+.card-wrapper .swiper-pagination-bullet-active{
+    opacity: 1;
+}
+
+.card-wrapper .swiper-slide-button{
+    color: #072763; /*COR DOS BOTÕES QUE ESTÃO PASSANDO O SLIDE */
+    margin-top: -35px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-wrapper{
+        margin: 0 10px 25px;
+    }
+
+    .card-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
