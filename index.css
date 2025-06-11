@@ -104,7 +104,9 @@ h2.titulo{
 section.topo{
     padding: 120px 5%; /* ESPAÇAMENTO ITNERNO DA SESSÃO */
     position: relative;
-    background-image: url(assets/escritorio.jpg); /* CAMINHO DA IMG */
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+    url(assets/escritorio.jpg); /* CAMINHO DA IMG */
+
     background-size: cover; /* COBRE TODA A SESSÃO */
     background-position: center; /* CENTRALIZA A IMAGEM DO BACKGROUND */
     background-repeat: no-repeat; /*CASO A IMG FIQUE MUITO PEQUENA PRA SESS~~AO, NÃO REPETE ELA */
@@ -178,5 +180,82 @@ section.topo .interface{
     100%{
         top: 30px;
     }
+}
+
+
+/* -------------------------------------------------- ESTILO SERVIÇOS --------------------------------------------------*/
+
+section.servicos{
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* ALTURA MÍNIMA */
+    /*background: linear-gradient(to top left, #1074bc, #072763);*/
+    background: linear-gradient(to top left, #fff,#94d2ff, #1074bc); /* COR DO GRADIENTE DA PAGINA */
+}
+
+
+.card-list .card-item {
+    list-style: none; /* TIRA AS BOLINHAS DE LISTAGEM */
+}
+
+.card-list .card-item .card-link{
+    width: 400px; /* TAMANHO DO CARD GERAL*/
+    display: block; /* EFEITO PARA A IMAGEM SE ENCAIXAR */
+    background: #fff; /* COR DO FUNDO DO CARD */
+    padding: 18px; /* ESPAÇAMENTO INTERNO DO CARD */
+    border-radius: 12px; /* DEIXA AS BORDAS EM CURVAS */
+    text-decoration: none; /* REMOVE O ASPECTO SUBLINHADO DE LINK*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #072763;
+}
+
+.card-list .card-link .card-image{
+    width: 100%; /* TAMANHO DA IMAGEM NO CARD*/
+    aspect-ratio: 16 / 9; /* PROPORÇÃO DA IMAGEM NO CARD */
+    object-fit: cover; /* A IMAGEM OCUPA O ESPAÇO DE FORMA PROPORCIONAL */
+    border-radius: 10px; /* DEIXAR AS BORDASS DA FOTO EM CURVA*/
+}
+
+.card-list .card-link .badge{
+    color: #072763; /* COR DO NOME DO SERVIÇO*/
+    padding: 8px 16px; /* ESPAÇAMENTO INTERNO DE ONDE O BACKGROUND DO NOME OCUPA*/
+    font-size: 0.95rem; /* TAMANHO DO NOME DO SERVIÇO */
+    font-weight: 500; /* NEGRITO DO NOME DO SERVIÇO */
+    margin: 16px 0 18px; /* MARGENS DE CIMA E BAIXO DO NOME DO SERVIÇO */
+    background: #dde4ff81; /* COR DO BACKGROUND DO NOME DO SERVIÇO*/
+    width: fit-content; /* LARGURA DO NOME E DO BACKGROUND VAI SOMENTE ATÉ ONDE TEM CONTEÚDO (LETRAS) DO NOME */
+    border-radius: 50px;
+}
+
+
+.card-list .card-link .card-title{
+    font-size: 1rem; /* TAMANHO DA DESCRIÇÃO */
+    color: #000; /* COR DA DESCRIÇÃO */
+    font-weight: 600; /* NEGRITO DA DESCRIÇÃO */
+}
+
+.card-list .card-link .card-button{
+    height: 35px;
+    width: 35px;
+    color: #072763;
+    border-radius: 50%; /* DEIXA CIRCULAR */
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #072763;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #072763;
 }
 
