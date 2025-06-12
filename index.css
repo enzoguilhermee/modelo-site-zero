@@ -208,7 +208,8 @@ section.servicos{
 }
 
 section.servicos .titulo{
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .card-list .card-item {
@@ -389,14 +390,14 @@ section.sobre .flex{
 
 .sobre .valor-box h3{
     font-size: 18px;
-    color: #FFF; /*Cor dos emojis dos cards de serviços*/
+    color: #FFF; /*Cor título dos cards de serviços */
     align-items: center;
     margin-top: 30px;
 }
 
 section.sobre .titulo-valores{
     font-size: 40px;
-    color: #FFF; /*Cor dos emojis dos cards de serviços*/
+    color: #FFF; /*Cor do título da sessão*/
     align-items: center;
     margin-bottom: -70px;
 }
@@ -404,6 +405,85 @@ section.sobre .titulo-valores{
 section.parceiros{
     padding: 40px 4%;
 }
+
+
+/* ------------------------------------------------- ESTILO CONTATOS -------------------------------------------------*/
+
+section.contatos{
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff56;
+    background: linear-gradient(135deg, rgba(16, 116, 188,0.9),rgba(28, 88, 168,0.9),rgba(7, 39, 99, 0.9));
+}
+
+section.contatos .flex{
+    justify-content: space-between;
+}
+
+section.contatos .line-contatos{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 4px solid #fff; /*Cor da barrinha de divisão do rodapé*/
+}
+
+section.contatos .line-contatos p i{
+    color: #ffffff; /*Cor dos emojis do rodapé */
+    font-size: 22px;
+}
+
+section.contatos .line-contatos p a{
+    color: #Fff; /* Cor dos textinhos do rodapé*/
+    text-decoration: none;
+}
+
+section.contatos img{
+    max-width: 80px;
+    max-height: 80px;
+}
+
+
+section.contatos .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #Fff; /*cor do fundo dos botoes sociais*/
+    color: #072763; /*cor dos emojis dos botoes sociais*/
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .5s;
+}
+
+section.contatos .btn-social button:hover{
+    color: #Fff;
+    background-color: #1c58a8;
+    border-radius: 30%;
+    border: #Fff 2px solid;
+}
+
+
+footer #copyright {
+    background: linear-gradient(135deg,rgba(7, 39, 99, 0.9), rgba(28, 88, 168,0.9), rgba(16, 116, 188,0.9));
+    color: #ffffff;
+    text-align: center;
+    padding: 24px;
+}
+
+footer #copyright a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+footer #copyright a:hover{
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.07);
+}
+
 
 @media screen and (max-width: 768px) {
     .card-wrapper{
