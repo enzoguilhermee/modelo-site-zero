@@ -199,36 +199,36 @@ section.servicos{
     list-style: none; /* TIRA AS BOLINHAS DE LISTAGEM */
 }
 
-.card-list .card-item .card-link{
+.card-list .card-item .card-link{ /* CARDS NO GERAL */
     user-select: none;
     display: block; /* EFEITO PARA A IMAGEM SE ENCAIXAR */
     background: #fff; /* COR DO FUNDO DO CARD */
     padding: 18px; /* ESPAÇAMENTO INTERNO DO CARD */
     border-radius: 12px; /* DEIXA AS BORDAS EM CURVAS */
     text-decoration: none; /* REMOVE O ASPECTO SUBLINHADO DE LINK*/
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
-    margin-top: 5%;
-    margin-bottom: 5%;
-    border: 2px solid transparent;
-    transition: 0.2s ease;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15); /* SOMBRA DOS CARDS PRA DAR UM EFEITO */
+    margin-top: 5%; /* ESPAÇO PARA CIMA DO CARD */
+    margin-bottom: 5%; /* ESPAÇO PARA BAIXO DO CARD */
+    border: 2px solid transparent; /* EFEITO PRA APLICAR O HOVER DE BORDA */
+    transition: 0.2s ease; /* TEMPO DE TRANSIÇÃO */
 }
 
-.card-list .card-item .card-link:hover{
+.card-list .card-item .card-link:hover{ /* COR DA BORDA DO CARD AO PASSAR O CURSOR POR CIMA */
     border-color: #072763;
 }
 
-.card-list .card-item .card-link:active{
+.card-list .card-item .card-link:active{ /* STATUS DO CURSOR AO PUXAR OS CARDS PARA O LADO */
     cursor: grabbing;
 }
 
-.card-list .card-link .card-image{
+.card-list .card-link .card-image{ /* IMAGEM DO CARD */
     width: 100%; /* TAMANHO DA IMAGEM NO CARD*/
     aspect-ratio: 16 / 9; /* PROPORÇÃO DA IMAGEM NO CARD */
     object-fit: cover; /* A IMAGEM OCUPA O ESPAÇO DE FORMA PROPORCIONAL */
     border-radius: 10px; /* DEIXAR AS BORDASS DA FOTO EM CURVA*/
 }
 
-.card-list .card-link .badge{
+.card-list .card-link .badge{ /* NOME DO SERVIÇO */
     color: #072763; /* COR DO NOME DO SERVIÇO*/
     padding: 8px 16px; /* ESPAÇAMENTO INTERNO DE ONDE O BACKGROUND DO NOME OCUPA*/
     font-size: 0.95rem; /* TAMANHO DO NOME DO SERVIÇO */
@@ -236,57 +236,57 @@ section.servicos{
     margin: 16px 0 18px; /* MARGENS DE CIMA E BAIXO DO NOME DO SERVIÇO */
     background: #dde4ff81; /* COR DO BACKGROUND DO NOME DO SERVIÇO*/
     width: fit-content; /* LARGURA DO NOME E DO BACKGROUND VAI SOMENTE ATÉ ONDE TEM CONTEÚDO (LETRAS) DO NOME */
-    border-radius: 50px;
+    border-radius: 50px; /* CURVATURA DAS EXTREMIDADES DO BACKGROUND DOS NOMES DO SERVIÇOS */
 }
 
 
-.card-list .card-link .card-title{
+.card-list .card-link .card-title{ /* DESCRIÇÃO */
     font-size: 0.7rem; /* TAMANHO DA DESCRIÇÃO */
     color: #000; /* COR DA DESCRIÇÃO */
     font-weight: 500; /* NEGRITO DA DESCRIÇÃO */
-    flex-grow: 1;
-    max-height: 100px;
-    overflow-y: auto;
-    padding-right: 10px;
+    flex-grow: 1; /* O ITEM CRESCE PARA OUCPAR O ESPAÇO RESTANTE DO CONTAINER */
+    max-height: 100px; /* ALTURA MÁXIMA */
+    overflow-y: auto; /* CASO PASSE DA ALTURA MÁXIMA, APLICA UM SCROLL*/
+    padding-right: 10px; /* ESPAÇAMENTO INTERNO DO TEXTO PARA COM O SCROLL */
 }
 
-.card-list .card-link .card-button{
-    height: 35px;
-    width: 35px;
-    color: #072763;
+.card-list .card-link .card-button{ /* SETA DO CARD */
+    height: 35px; /* ALTURA */
+    width: 35px; /* LARGURA */
+    color: #072763; /* COR DA SETA */
     border-radius: 50%; /* DEIXA CIRCULAR */
-    margin: 30px 0 5px;
-    background: none;
-    cursor: pointer;
-    border: 2px solid #072763;
-    transform: rotate(-45deg);
-    transition: 0.4s ease;
+    margin: 30px 0 5px; /* ESPAÇAMENTO DA SETA PARA COM A DESCRIÇÃO */
+    background: none; /* REFORÇA QUE A FIGURA NÃO TENHA NADA NO FUNDO */
+    cursor: pointer; /* FORMATO DO CURSOR AO PASSAR POR CIMA DA SETA / BOTÃO DA SETA */
+    border: 2px solid #072763; /* BORDA E FIGURA DA SETA */
+    transform: rotate(-45deg); /* DIREÇÃO DA SETA */
+    transition: 0.4s ease; /* FORMATO DE TRANSIÇÃO PARA O HOVER DA BORDA */
 }
 
-.card-list .card-link:hover .card-button{
+.card-list .card-link:hover .card-button{ /* HOVER DO BOTÃO */
     color: #fff;
     background: #072763;
 }
 
-.card-wrapper{
+.card-wrapper{ /* ESTRUTURA DE CONVERSA COM SWAPPER */
     max-width: 1100px;
     margin: 0 60px 35px;
     padding: 20px 10px;
     overflow: hidden;
 }
 
-.card-wrapper .swiper-pagination-bullet{
+.card-wrapper .swiper-pagination-bullet{ /* ESTRUTURA DE CONVERSA COM SWAPPER */
     height: 13px;
     width: 13px;
     opacity: 0.5;
     background: #072763;
 }
 
-.card-wrapper .swiper-pagination-bullet-active{
+.card-wrapper .swiper-pagination-bullet-active{ /* ESTRUTURA DE CONVERSA COM SWAPPER */
     opacity: 1;
 }
 
-.card-wrapper .swiper-slide-button{
+.card-wrapper .swiper-slide-button{ /* ESTRUTURA DE CONVERSA COM SWAPPER */
     color: #072763; /*COR DOS BOTÕES QUE ESTÃO PASSANDO O SLIDE */
     margin-top: -35px;
 }
