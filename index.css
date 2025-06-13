@@ -109,14 +109,14 @@ h3.titulo{
 
 /* ------------------------------------------- ESTILO NAV MOBILE ---------------------------------------------*/
 .btn-abrir-menu i {
-    color: #F50087; /*Emoji do estilo mobile*/
+    color: #fff; /*Emoji do estilo mobile*/
     font-size: 40px;
     cursor: pointer;
 }
 
 
 .menu-mobile{
-    background-color: #000; /*Cor de fundo do menu mobile*/
+    background: linear-gradient(135deg,rgba(7, 39, 99, 0.9), rgba(28, 88, 168,0.9), rgba(16, 116, 188,0.9));
     height: 100vh;
     position: fixed;
     top: 0;
@@ -144,26 +144,26 @@ h3.titulo{
 }
 
 .menu-mobile .btn-fechar i{
-    color: #F50087; /* Cor do X do menu mobile*/
-    font-size: 30px;
+    color: #fff; /* Cor do X do menu mobile*/
+    font-size: 40px;
     cursor: pointer;
 }
 
 .menu-mobile nav ul{
-    text-align: right;
+    text-align: center;
 }
 
 .menu-mobile nav ul li a{
-    color: #F50087; /* Cor do nome do menu mobile*/
-    font-size: 20px;
+    color: #ffffff; /* Cor do nome do menu mobile*/
+    font-size: 30px;
     font-weight: 300;
     padding: 20px 8%;
     display: block;
 }
 
 .menu-mobile nav ul li a:hover{
-    background-color: #F50087;
-    color: black;
+    background-color: #fff;
+    color: #1c58a8;
 }
 
 .overlay-menu{
@@ -750,5 +750,15 @@ footer #copyright a:hover{
 
     .card-wrapper .swiper-slide-button{
         display: none;
+    }
+
+
+    /* AJUSTANDO TAMANHO DO TEXTO DA SESSÃO SOBRE*/
+    .sobre .txt-sobre h3{
+        font-size: 20px;
+    }
+
+    .sobre .txt-sobre p{
+        font-size: 18px; 
     }
 }
