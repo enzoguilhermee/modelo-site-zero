@@ -352,6 +352,33 @@ section.sobre .flex{
     font-size: 20px; 
 }
 
+.CTA{
+  padding: 20px 0;
+  text-align: center;
+}
+
+.CTA .btn-orçamento-CTA button{
+    padding: 20px; /* ESPAÇAMENTO INTERNO DA ÁREA DE CLIQUE DO BOTÃO */
+    font-size: 18px; /* TAMANHO */
+    font-weight: 600; /* NEGRITO */
+    background: #fff;
+    color: #000;
+    border: 0; /* TIRA AS LINHAS DE BORDA DO BOTÃO */
+    border-radius: 10px; /* DEIXA OS CANTOS PONTIAGUDOS ARREDONDADOS*/
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.705);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn-orçamento-CTA button:hover{
+    transform: scale(1.06);
+    transition-duration: .2s;
+    color: #000;
+    text-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 20px rgba(250, 248, 248, 0.863);
+}
+
+
 
 .valores-container {
     padding: 80px 4%;
@@ -399,8 +426,11 @@ section.sobre .titulo-valores{
     font-size: 40px;
     color: #FFF; /*Cor do título da sessão*/
     align-items: center;
-    margin-bottom: -70px;
+    margin-bottom: -100px;
+    padding: 50px 0;
 }
+
+/* ------------------------------------------------- ESTILO PARCEIROS -------------------------------------------------*/
 
 section.parceiros{
     padding: 40px 4%;
