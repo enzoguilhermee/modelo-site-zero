@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- FIM DO LINK SWIPERJS CSS -->
 </head>
-    <script src="script.js" defer></script>
+    <script src="menu.js" defer></script>
 <body>
     <header>
         <div class="interface">
@@ -56,6 +56,31 @@
                     </a>
                 </nav>
             </div><!--btn-orçamento   -->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div><!--btn-abrir-menu-->
+
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div><!--btn-fechar-->
+
+                <nav> <!-- navbar mobile -->
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="https://www.instagram.com/laka_dev?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Orçamento</a></li>
+                    </ul>
+                </nav> <!-- fim navbar mobile -->
+            </div><!--menu-mobile-->
+
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div><!--overlay-menu-->
         </div><!-- interface -->
     </header>
 
@@ -86,7 +111,6 @@
                 </div> <!-- flex -->
             </div> <!-- interface -->
         </section> <!-- topo -->
-
 
         <section class="servicos" id="servicos">
 
@@ -216,9 +240,7 @@
                 </div> <!-- flex -->
             </div> <!-- interface -->
         </section> <!-- sobre -->
-
-
-        
+    
         <section class="parceiros">
             <div class="container swiper">
                     <h2 class="titulo">NOSSOS PARCEIROS<span>.</span></h2>   
@@ -279,9 +301,13 @@
                     </div><!--logo-footer-->
 
                     <div class="btn-social">
+                        
                         <a href="https://api.whatsapp.com/send?phone=5579981000041&text=Olá&fbclid=PAZXh0bgNhZW0CMTEAAacIB7oeSf7CbJZ__0ELwax6Dtzhn_ut5bgpbHCD5NR5Tuo_78Qa7JmSnwcoEQ_aem_IgD59_7k3SS4iNpeOyQz7A" target="_blank"><button><i class="bi bi-whatsapp"></i></button></a>
+
                         <a href="https://www.instagram.com/laka_dev?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+
                         <a href="https://www.linkedin.com/in/enzo-guilherme/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+
                     </div><!--btn-social-->
                 </div>
             </div><!--line-contatos-->
