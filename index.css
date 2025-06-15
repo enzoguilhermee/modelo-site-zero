@@ -22,8 +22,8 @@ body{
 }
 
 .logo img{                      /*DEFINE OS TAMANHOS PARA A FOTO QUE FICARÁ NA NAV*/
-    max-width: 110px;
-    max-height: 110px;
+    max-width: 80px;
+    max-height: 80px;
     margin-bottom: -8%;
     margin-top: -8%;
 }
@@ -32,7 +32,7 @@ body{
 
 
 header{
-    padding: 20px 4%; /* ESPAÇAMENTO INTERNO DOS ITENS DA NAVBAR */
+    padding: 5px 4%; /* ESPAÇAMENTO INTERNO DOS ITENS DA NAVBAR */
     box-shadow: 0 0 20px 5px #ffffff88;  /* SOMBRA BRANCA NA "SEÇÃO" DA NAVBAR */
     background: linear-gradient(135deg,rgba(7, 39, 99, 0.9), rgba(28, 88, 168,0.9), rgba(16, 116, 188,0.9));
 }
@@ -49,8 +49,8 @@ header a{
     text-decoration: none; /* TIRAR SUBLINHADO DOS LINKS*/
     display: inline-block; /* NECESSÁRIO PARA USAR O TRANSFORM */
     transition: .2s;
-    font-size: 20px;
-    padding: 8px;
+    font-size: 15px;
+    padding: 4px 10px;
     border-radius: 20px;
     font-weight: 600;
 }
