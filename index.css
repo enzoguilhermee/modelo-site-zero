@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif; /* FONTE PADRÃO DE TODAS AS LETRAS DA PÁGINAS */
+    font-family: 'League Spartan', sans-serif;
 }
 
 body{
@@ -49,8 +49,8 @@ header a{
     text-decoration: none; /* TIRAR SUBLINHADO DOS LINKS*/
     display: inline-block; /* NECESSÁRIO PARA USAR O TRANSFORM */
     transition: .2s;
-    font-size: 15px;
-    padding: 4px 10px;
+    font-size: 18px;
+    padding: 6px 10px;
     border-radius: 20px;
     font-weight: 600;
 }
@@ -73,23 +73,26 @@ header nav.menu-desktop ul li{
     padding: 0 35px; /* ESPAÇAMENTO INTERNO DE CIMA E BAIXO É 0 E ENTRE OS LINKS É 35 */
 }
 
+
 .btn-orçamento button{
     padding: 10px; /* ESPAÇAMENTO INTERNO DA ÁREA DE CLIQUE DO BOTÃO */
     font-size: 18px; /* TAMANHO */
     font-weight: 600; /* NEGRITO */
-    background: rgb(255, 255, 255);
-    background: linear-gradient(135deg, rgb(255,255,255) 40%, rgb(148, 210, 255)80%, rgb(16, 116, 188)100%);
-    color: #000000;
+    background: #fff;
+    color: #000;
     border: 0; /* TIRA AS LINHAS DE BORDA DO BOTÃO */
     border-radius: 10px; /* DEIXA OS CANTOS PONTIAGUDOS ARREDONDADOS*/
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.705);
+    transition: box-shadow 0.3s ease;
 }
 
 .btn-orçamento button:hover{
     transform: scale(1.06);
     transition-duration: .2s;
-    color: rgb(0, 0, 0);
+    color: #000;
     text-shadow: 0 0 1px #fff;
+    box-shadow: 0 0 20px rgba(250, 248, 248, 0.863);
 }
 
 h2.titulo{
@@ -571,6 +574,7 @@ section.contatos{
     padding: 40px 4%;
     box-shadow: 0 0 40px 10px #1c59a8;
     background: linear-gradient(135deg, rgba(16, 116, 188,0.9),rgba(28, 88, 168,0.9),rgba(7, 39, 99, 0.9));
+    position: relative;
 }
 
 section.contatos .flex{
@@ -621,27 +625,35 @@ section.contatos .btn-social button:hover{
     border: #Fff 2px solid;
 }
 
-
 footer #copyright {
-    background: linear-gradient(135deg,rgba(7, 39, 99, 0.9), rgba(28, 88, 168,0.9), rgba(16, 116, 188,0.9));
+    background: #eee;
     color: #ffffff;
     text-align: center;
     padding: 24px;
+    justify-content: space-between;
 }
 
 footer #copyright a {
-    color: #fff;
+    color: #072763;
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
 footer #copyright a:hover{
-    color: #fff;
+    color: #072763;;
     text-decoration: none;
     transform: scale(1.07);
 }
+.sof{
+    font-weight: 600;
+    color: #84cbfd;
+}
 
+.team{
+    font-weight: 600;
+    color: #1c58a8;
+}
 /*---------------------------- MEDIA SCREEN 1080px --------------------------------*/
 
 
