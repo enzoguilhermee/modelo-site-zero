@@ -33,7 +33,7 @@ body{
 
 header{
     padding: 5px 4%; /* ESPAÇAMENTO INTERNO DOS ITENS DA NAVBAR */
-    box-shadow: 0 0 20px 5px #ffffff88;  /* SOMBRA BRANCA NA "SEÇÃO" DA NAVBAR */
+    box-shadow: 0 0 20px 5px #ffffff;  /* SOMBRA BRANCA NA "SEÇÃO" DA NAVBAR */
     background: linear-gradient(135deg,rgba(7, 39, 99, 0.9), rgba(28, 88, 168,0.9), rgba(16, 116, 188,0.9));
 }
 
@@ -184,12 +184,12 @@ h3.titulo{
 section.topo{
     padding: 120px 5%; /* ESPAÇAMENTO INTERNO DA SESSÃO */
     position: relative;
-    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0)),
+    background-image: linear-gradient(to top right, rgba(0,0,0,1), rgba(0, 0, 0, 0.3)),
     url(assets/escritorio.jpg); /* CAMINHO DA IMG */
-
     background-size: cover; /* COBRE TODA A SESSÃO */
     background-position: center; /* CENTRALIZA A IMAGEM DO BACKGROUND */
     background-repeat: no-repeat; /*CASO A IMG FIQUE MUITO PEQUENA PRA SESS~~AO, NÃO REPETE ELA */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.603); /* SOMBRA NA PARTE INFERIOR */
 }
 
 
@@ -388,7 +388,8 @@ section.servicos .titulo{
 
 
 section.sobre{
-    background: linear-gradient(to top left, #fff, #94d2ff, #1074bc,#1c58a8, #1074bc, #94d2ff, #fff ); /* COR DO GRADIENTE DA PAGINA */
+    background: #eeeeeee5; /* COR DO GRADIENTE DA PAGINA */
+    box-shadow: #000;
 }
 
 .sobre .txt-sobre {
@@ -399,6 +400,7 @@ section.sobre{
     background-position: center; /* Centraliza a imagem de fundo */
     background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
     color: #fff; /* COR DO TEXTO DO SOBRE NÓS */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.719); /* SOMBRA NA PARTE INFERIOR */
 }
 
 
@@ -457,7 +459,6 @@ section.sobre .flex{
     flex-wrap: wrap; /* Permite que as caixas quebrem linha */
     gap: 20px;
     justify-content: center; /* Centraliza os boxes */
-
 }
 
 .valor-box {
@@ -472,12 +473,13 @@ section.sobre .flex{
     text-align: center;
     transition: .2s;
     background: linear-gradient(135deg,rgba(7, 39, 99, 0.9), rgba(28, 88, 168,0.9), rgba(16, 116, 188,0.9));
+    box-shadow: 0px 0px 15px #00000044;
 }
 
 .valor-box:hover {
     transform: scale(1.07); /* Animação leve ao passar o mouse */
     background-color: rgba(255, 255, 255, 0.15);
-    box-shadow: 0px 0px 15px #94d2ff;
+    box-shadow: 0px 0px 15px #0000007e;
 }
 
 .sobre .valor-box i{
@@ -494,7 +496,7 @@ section.sobre .flex{
 
 section.sobre .titulo-valores{
     font-size: 40px;
-    color: #FFF; /*Cor do título da sessão*/
+    color: #072763; /*Cor do título da sessão*/
     align-items: center;
     margin-bottom: -100px;
     padding: 50px 0;
@@ -504,7 +506,8 @@ section.sobre .titulo-valores{
 
 section.parceiros{
     padding: 40px 4%;
-    background-color: #eee;
+    background: #eeeeeee5; /* COR DO GRADIENTE DA PAGINA */
+    box-shadow: 0px -20px 80px -20px rgba(0, 0, 0, 0.3);
 }
 
 section.parceiros .titulo{
@@ -655,6 +658,12 @@ footer #copyright a:hover{
 
 
     /* CABEÇALHO */
+
+    header{
+    padding: 12px 4%; /* ESPAÇAMENTO INTERNO DOS ITENS DA NAVBAR */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* SOMBRA NA PARTE INFERIOR */
+    }
+
     .menu-desktop, .btn-orçamento{
         display: none;
     }
@@ -702,8 +711,8 @@ footer #copyright a:hover{
     }
 
     .logo img{
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 90px;
+        max-height: 90px;
     }
 
 
