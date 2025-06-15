@@ -79,7 +79,7 @@ header nav.menu-desktop ul li{
     font-weight: 600; /* NEGRITO */
     background: rgb(255, 255, 255);
     background: linear-gradient(135deg, rgb(255,255,255) 40%, rgb(148, 210, 255)80%, rgb(16, 116, 188)100%);
-    color: #1c58a8;
+    color: #000000;
     border: 0; /* TIRA AS LINHAS DE BORDA DO BOTÃO */
     border-radius: 10px; /* DEIXA OS CANTOS PONTIAGUDOS ARREDONDADOS*/
     cursor: pointer;
@@ -88,7 +88,7 @@ header nav.menu-desktop ul li{
 .btn-orçamento button:hover{
     transform: scale(1.06);
     transition-duration: .2s;
-    color: rgb(16, 116, 188);
+    color: rgb(0, 0, 0);
     text-shadow: 0 0 1px #fff;
 }
 
