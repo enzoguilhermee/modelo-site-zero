@@ -392,7 +392,10 @@ section.servicos .titulo{
 
 section.sobre{
     background: #eeeeeee5; /* COR DO GRADIENTE DA PAGINA */
-    box-shadow: #000;
+    box-shadow: 
+        0 -4px 10px rgba(0, 0, 0, 0.8),  /* sombra pra cima */
+        0  4px 10px rgba(0, 0, 0, 0.8);  /* sombra pra baixo */
+    position: relative;
 }
 
 .sobre .txt-sobre {
