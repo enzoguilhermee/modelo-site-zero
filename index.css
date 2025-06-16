@@ -539,15 +539,12 @@ section.parceiros .titulo{
     aspect-ratio: 1 / 1; /* PROPORÇÃO DA IMAGEM NO CARD */
     object-fit: contain; /* A IMAGEM OCUPA O ESPAÇO DE FORMA PROPORCIONAL */
     border-radius: 15px;
-    filter: grayscale(40%); /* metade preto e branco */
     transition: .3s ease;
 }
 
 .card-list-parceiros .card-link-parceiros .card-image-parceiros:hover{ /* IMAGEM DO CARD */
     border-radius: 50%;
-    filter: grayscale(0%);
 }
-
 
 .card-wrapper{ /* ESTRUTURA DE CONVERSA COM SWAPPER */
     max-width: 1100px;
